@@ -6,9 +6,7 @@ import org.apache.commons.text.StringEscapeUtils;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
-import org.apache.solr.client.solrj.response.UpdateResponse;
 import org.jsoup.Jsoup;
-
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +19,7 @@ public class PostService {
 
     final private String solrUrl = "http://localhost:8983/solr";
     final private int batchSize = 50;
-    final private String fileLocation = "/media/sf_Downloads/coffee.stackexchange.com/Posts.xml";
+    final private String fileLocation = "/media/sf_Downloads/stackoverflow.com-Posts/Posts.xml";
 
 
     private SolrClient solrClient;
